@@ -94,7 +94,7 @@ background: url('/hero-bg.png') center/cover no-repeat;
 }
 
 .section.vr {
-    background: url('//vr-bg.png') center/cover no-repeat;
+    background: url(/vr-bg.png) center/cover no-repeat;
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -102,15 +102,15 @@ background: url('/hero-bg.png') center/cover no-repeat;
 }
 
 .section.vr::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(to bottom, #1b1f3b 0%, transparent 100%);
-    z-index: 1;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, #1b1f3b 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
   }
 
   .container {
