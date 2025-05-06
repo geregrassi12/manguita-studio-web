@@ -18,31 +18,62 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-header {
-  background-color: #121628;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-header img.logo {
-  height: 60px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
+.header {
+    background-color: #0F1126;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .nav-menu a:hover {
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    transition: transform 0.2s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
 
 .hero {
 background: url('../herobg.png') center/cover no-repeat;
@@ -148,7 +179,7 @@ background: url('../herobg.png') center/cover no-repeat;
 }
 
 .section.other {
-  background: url('other-bg.png') center/cover no-repeat;
+  background: url('../otherbg.png') center/cover no-repeat;
   text-align: center;
 }
 
@@ -174,6 +205,18 @@ background: url('../herobg.png') center/cover no-repeat;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 
+  .transition-to-other-games {
+    position: absolute;
+    z-index: -0;
+    margin-top: -450px; /* para acercarlo a la sección anterior si fuera necesario */
+    overflow: hidden;
+  }
+  
+  .transition-to-other-games img {
+    display: block;
+    width: 100%;
+    transform: rotate(180deg); /* Rota la imagen */
+  }
 .images-side {
   flex: 1;
   display: flex;
@@ -201,100 +244,169 @@ background: url('../herobg.png') center/cover no-repeat;
 }
 
 .other-games {
-    background: radial-gradient(circle at top, #0bbad2, #005f8a);
-    padding: 4rem 2rem;
-    color: #fff;
-    position: relative;
+    background: url('../otherbg.png') center/cover no-repeat;
+    color: white;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+    padding: 60px 0;
+    position: relative;
     overflow: hidden;
+    text-align: center;
   }
   
-  .other-games h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+  .section-header{
+    z-index: 2;
+  }
+
+  .section-header h2 {
+    z-index: 2;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
   }
   
-  .games-wrapper {
+  .game-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
   }
   
-  .game-card {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 2rem;
-    padding: 1.5rem;
-    width: 260px;
-    position: relative;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    transition: transform 0.3s;
-  }
-  
-  .game-card:hover {
-    transform: translateY(-5px);
+  .game-block.in-dev {
+    flex-wrap: wrap-reverse;
   }
   
   .game-logo {
-    width: 100px;
+    width: 140px;
     height: auto;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
   
-  .game-description {
-    font-size: 0.95rem;
+  .game-info {
+    max-width: 380px;
+    text-align: left;
+  }
+  
+  .game-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .game-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
     line-height: 1.4;
-    margin-bottom: 1rem;
   }
   
   .btn-play {
-    background: #00e0ff;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    color: #003c57;
-    text-decoration: none;
-    font-weight: bold;
     display: inline-block;
+    background: #ffd93b;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
   }
   
-  .game-card.coming .btn-play {
-    display: none;
+  .dev-label {
+    display: inline-block;
+    background: #0fa3b1;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.9rem;
   }
   
-  .soon-label {
-    background: #ffc107;
-    color: #222;
-    padding: 0.3rem 1rem;
-    border-radius: 1rem;
-    font-weight: bold;
-  }
-  
-  .coming-soon {
-    margin-top: 4rem;
+  .coming-soon-block {
+    margin-bottom: 100px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
-  .coming-soon .cat-deco {
-    width: 80px;
-    margin-bottom: 1rem;
+  .sleeping-cat {
+    width: 120px;
     animation: float 3s ease-in-out infinite;
   }
   
-  .coming-soon .soon-text {
-    font-size: 1.2rem;
-    opacity: 0.9;
+  .coming-text {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #d0e7ff;
   }
   
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
   }
+
+
+
+
+  .footer {
+    background: linear-gradient(to bottom, #025373, #000000);
+    padding: 20px;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-left {
+    max-width: 60%;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right a {
+    margin-left: 15px;
+  }
+  
+  .footer-right img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s;
+  }
+  
+  .footer-right img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .section-inner {

@@ -11,16 +11,30 @@
 />
 </head>
 <body>
-    <header>
-      <div class="container">
-        <img src="logo-manguita.png" alt="Manguita Logo" class="logo" />
-        <nav>
-          <a href="#vr">VR</a>
-          <a href="#klee">Klee Games</a>
-          <a href="#other">Otros Juegos</a>
+    <header class="header">
+        <div class="header-left">
+          <img src="manguitastudio_logo2.png" alt="Manguita Logo" class="logo">
+          <span class="brand">Manguita Studio</span>
+        </div>
+      
+        <nav class="nav-menu">
+          <a href="#">VR</a>
+          <a href="#">Klee Games</a>
+          <a href="#">Otros Juegos</a>
         </nav>
-      </div>
-    </header>
+      
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank">
+            <img src="instagram.png" alt="Instagram">
+          </a>
+          <a href="https://tiktok.com" target="_blank">
+            <img src="tik-tok.png" alt="TikTok">
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook">
+          </a>
+        </div>
+      </header>
   
     <section class="hero">
     </section>
@@ -35,11 +49,11 @@
         <div class="images-side">
           <div class="grid">
             <img src="vr1.png" alt="VR 1" />
-            <img src="vr2.png" alt="VR 2" />
-            <img src="vr3.png" alt="VR 3" />
-            <img src="vr4.png" alt="VR 4" />
-            <img src="vr5.png" alt="VR 5" />
-            <img src="vr6.png" alt="VR 6" />
+            <img src="vr1.png" alt="VR 2" />
+            <img src="vr1.png" alt="VR 3" />
+            <img src="vr1.png" alt="VR 4" />
+            <img src="vr1.png" alt="VR 5" />
+            <img src="vr1.png" alt="VR 6" />
           </div>
         </div>
       </div>
@@ -72,33 +86,77 @@
       
         </div>
       </section>
+
   
-      <section class="other-games">
-        <div class="background-deco"></div>
-        <h2>Otros juegos</h2>
-      
-        <div class="games-wrapper">
-          <!-- Game 1 - Publicado -->
-          <div class="game-card">
-            <img src="ruta/a/logo-juego1.png" alt="Juego publicado" class="game-logo" />
-            <p class="game-description">Ayuda al conejito a saltar por islas flotantes en un mundo tropical.</p>
-            <a href="#" class="btn-play">Jugar ahora</a>
+      <section id="other-games" class="other-games">
+
+        <div class="transition-to-other-games">
+            <img src="section-transition.png" alt="Sección Transición">
           </div>
+
+        <div class="section-header">
+          <h2>Other Games</h2>
+        </div>
       
-          <!-- Game 2 - En producción -->
-          <div class="game-card coming">
-            <img src="ruta/a/logo-juego2.png" alt="Juego en desarrollo" class="game-logo" />
-            <p class="game-description">¡Un nuevo juego lleno de acción con tanques se acerca!</p>
-            <span class="soon-label">Próximamente</span>
+        <!-- Juego publicado -->
+        <div class="game-block published">
+          <img src="juego-publicado.png" alt="Published Game Logo" class="game-logo">
+          <div class="game-info">
+            <h3>RUN BEAVER RUN - zig zag game</h3>
+            <p>Stay quick on your feet! Keep the beaver ahead of the sinking path</p>
+            <a href="#" class="btn-play">Visitar</a>
           </div>
         </div>
       
-        <!-- Coming Soon Decorativo -->
-        <div class="coming-soon">
-          <img src="ruta/a/gato-dormido.png" alt="Gato dormido" class="cat-deco" />
-          <p class="soon-text">Y más aventuras en camino...</p>
+        <!-- Gato dormido y coming soon -->
+        <div class="coming-soon-block">
+          <img src="gato-durmiendo.png" alt="Sleeping Cat Mascot" class="sleeping-cat">
+          <p class="coming-text">Coming soon...</p>
+        </div>
+      
+        <!-- Juego en producción -->
+        <div class="game-block in-dev">
+          <div class="game-info">
+            <h3>Mini Tank Blitz</h3>
+            <p>El próximo juego de estrategia en miniatura. Controlá tu tanque y dominá el campo de batalla.</p>
+            <span class="dev-label">En desarrollo</span>
+          </div>
+          <img src="tanque-preview.png" alt="Game in Development Logo" class="game-logo">
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <img src="manguitastudio_logo2.png" alt="Manguita Studio Logo" class="footer-logo">
+            <p class="copyright">© 2025 Manguita Studio</p>
+            <ul class="footer-links">
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="tik-tok.png" alt="TikTok"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+          </div>
+        </div>
+      </footer>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/klee-carousel.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
