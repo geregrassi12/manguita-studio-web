@@ -43,13 +43,12 @@
           </div>
         </div>
       </div>
-      <div class="wave-separator">
-        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#00c7d0" d="M0,30 C480,90 960,0 1440,60 L1440,100 L0,100 Z"></path>
-        </svg>
-      </div>
     </section>
-  
+    
+    <div class="wave-transition">
+        <img src="transition-wave.png" alt="Transición de fondo">
+      </div>
+
     <section class="section klee" id="klee">
         <div class="container section-inner">
           
@@ -74,17 +73,33 @@
         </div>
       </section>
   
-    <section class="section other" id="other">
-      <div class="container">
-        <h1>Otros Juegos</h1>
-        <p>Explorá títulos en producción o ya lanzados por Manguita Studio.</p>
-        <div class="grid">
-          <img src="game1.png" alt="Game 1" />
-          <img src="game2.png" alt="Game 2" />
-          <img src="game3.png" alt="Game 3" />
+      <section id="other-games" class="other-games-section">
+        <div class="container">
+          <h2 class="section-title">Otros Juegos</h2>
+          <p class="section-subtitle">Ya publicados</p>
+      
+          <div class="game-card">
+            <div class="game-cover">
+              <img src="img/juego1-portada.png" alt="Juego 1 portada" />
+            </div>
+            <div class="game-info">
+              <h3 class="game-title">Nombre del juego</h3>
+              <p class="game-description">Explora, aprende y diviértete en este juego lleno de aventuras y colores.</p>
+              <a href="#" class="btn-playstore">Disponible en Play Store</a>
+              <div class="gallery">
+                <img src="img/juego1-1.png" alt="Pantalla 1" />
+                <img src="img/juego1-2.png" alt="Pantalla 2" />
+                <img src="img/juego1-3.png" alt="Pantalla 3" />
+                <!-- Si hay más se puede hacer un pequeño carrusel aquí -->
+              </div>
+            </div>
+          </div>
+      
+          <div class="coming-soon">
+            <p>Próximamente más juegos...</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     <script src="js/klee-carousel.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
