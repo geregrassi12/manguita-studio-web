@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -39,24 +43,36 @@
           </div>
         </div>
       </div>
+      <div class="wave-separator">
+        <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#00c7d0" d="M0,30 C480,90 960,0 1440,60 L1440,100 L0,100 Z"></path>
+        </svg>
+      </div>
     </section>
   
     <section class="section klee" id="klee">
-      <div class="container section-inner">
-        <div class="images-side">
-          <div class="grid">
-            <img src="klee1.png" alt="Klee 1" />
-            <img src="klee2.png" alt="Klee 2" />
-            <img src="klee3.png" alt="Klee 3" />
+        <div class="container section-inner">
+          
+          <div class="klee-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="klee1.png" alt="Imagen 1" /></div>
+              <div class="swiper-slide"><img src="klee2.png" alt="Imagen 2" /></div>
+              <div class="swiper-slide"><img src="klee3.png" alt="Imagen 3" /></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
+          
+          <div class="section-content">
+            <h1>Klee Games</h1>
+            <p>Un mundo infantil y creativo. Juegos que divierten y educan en escenarios llenos de color y aventuras.</p>
+            <button class="btn">
+              <a target="_blank" href="https://kleegames.com" style="color: white;">Visitar sitio</a>
+            </button>
+          </div>
+      
         </div>
-        <div class="section-content">
-          <h1>Klee Games</h1>
-          <p>Un mundo infantil y creativo. Juegos que divierten y educan en escenarios llenos de color y aventuras.</p>
-          <button class="btn">Visitar sitio</button>
-        </div>
-      </div>
-    </section>
+      </section>
   
     <section class="section other" id="other">
       <div class="container">
@@ -69,5 +85,8 @@
         </div>
       </div>
     </section>
+    <script src="js/klee-carousel.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
