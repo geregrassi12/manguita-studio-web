@@ -183,7 +183,7 @@ background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
   }
 
 .section.klee {
-  background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
+  background: url('../Assets/img/Backgrounds/kleebg.png') center/cover no-repeat;
   display: flex; align-items: center;
 }
 
