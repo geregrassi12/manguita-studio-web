@@ -85,7 +85,7 @@ body {
   }
 
 .hero {
-background: url('../Assets/img/backgrounds/herobg.png') center/cover no-repeat;
+background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
  height: 100vh;
   display: flex;
   flex-direction: column;
@@ -138,7 +138,7 @@ background: url('../Assets/img/backgrounds/herobg.png') center/cover no-repeat;
 }
 
 .section.vr {
-    background: url('../Assets/img/backgrounds/vr-bg.png') center/cover no-repeat;
+    background: url('../Assets/img/Backgrounds/vr-bg.png') center/cover no-repeat;
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -183,13 +183,13 @@ background: url('../Assets/img/backgrounds/herobg.png') center/cover no-repeat;
   }
 
 .section.klee {
-  background: url('../Assets/img/backgrounds/kleebg.png') center/cover no-repeat;
+  background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
   display: flex; align-items: center;
 }
 
 .section.other {
     z-index: 1;
-  background: url('../Assets/img/backgrounds/otherbg.png') center/cover no-repeat;
+  background: url('../Assets/img/Backgrounds/otherbg.png') center/cover no-repeat;
   text-align: center;
 }
 
@@ -254,7 +254,7 @@ background: url('../Assets/img/backgrounds/herobg.png') center/cover no-repeat;
 }
 
 .other-games {
-    background: url('../Assets/img/backgrounds/otherbg.png') center/cover no-repeat;
+    background: url('../Assets/img/Backgrounds/otherbg.png') center/cover no-repeat;
     color: white;
     font-family: 'Poppins', sans-serif;
     padding: 60px 0;
