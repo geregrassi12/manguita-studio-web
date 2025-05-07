@@ -15,6 +15,20 @@
       <img src="Assets/img/Logos/manguitastudio_logo2.png" alt="Manguita Logo" class="logo">
       <span class="brand">Manguita Studio</span>
     </div>
+    <div class="burger" id="burger">☰</div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-nav">
+        <a href="pages/vr-page.html">VR</a>
+        <a href="#klee">Klee Games</a>
+        <a href="#other-games">Otros Juegos</a>
+      </nav>
+      <div class="mobile-socials">
+        <a href="https://instagram.com" target="_blank"><img src="Assets/icons/instagram.png" alt="Instagram"></a>
+        <a href="https://tiktok.com" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
+        <a href="https://facebook.com" target="_blank"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
+      </div>
+    </div>
   
     
   
@@ -175,12 +189,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const burger = document.getElementById('burger');
-        const navMenu = document.getElementById('nav-menu');
-      
-        burger.addEventListener('click', () => {
-          navMenu.classList.toggle('show');
-        });
-      </script>
+      const burger = document.getElementById('burger');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      burger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>

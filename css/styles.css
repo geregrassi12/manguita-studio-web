@@ -144,6 +144,51 @@ body {
     margin-left: auto;
   }
 
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #0F1126;
+    padding: 20px;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .mobile-menu.show {
+    display: flex;
+  }
+  
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .mobile-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+  }
+  
+  .mobile-socials img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+  }
+
 /* HERO */
 
 .hero {
@@ -580,24 +625,17 @@ body {
 @media screen and (max-width: 768px) {
 
   /* HEADER */
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    align-items: flex-start;
-  }
-
-  .header-left {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
   .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 16px;
-    margin-top: 12px;
+    display: none !important;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    z-index: 1100;
   }
 
   /* HERO */
@@ -608,17 +646,29 @@ body {
   }
 
   /* VR SECTION */
+  .vr-section {
+    background: #202058; /* o cualquier color sólido que combine */
+    background-image: none;
+    padding: 40px 10px 40px 0px;
+  }
+
   .vr-content {
     flex-direction: column;
     gap: 30px;
     padding: 0 20px;
   }
 
-  .vr-title-box,
+  .vr-title-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .vr-title-box {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
   .vr-desc-box {
-    max-width: 100%;
-    text-align: center;
-    margin: 0 auto;
+    margin-top: 0;
     border-radius: 16px;
   }
 
@@ -626,35 +676,52 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .vr-button {
-    width: 100%;
-    text-align: center;
+  .vr-button{
+    font-size: 1.1rem;
+    padding: 16px 32px;
   }
 
+
+  
   /* KLEE SECTION */
+.klee-section{
+  padding: 40px 0px 40px 10px ;
+}
+
   .klee-content {
     flex-direction: column;
     padding: 0 20px;
     gap: 30px;
   }
 
-  .klee-title-box,
-  .klee-desc-box {
+.klee-title-box {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     text-align: center;
-    border-radius: 16px;
+    font-size: 1.8rem;
   }
+
+  .klee-title-box h2 {
+    font-size: 1.8rem;
+  }
+
+
 
   .klee-image-grid {
     grid-template-columns: 1fr;
   }
 
-  .klee-button {
-    width: 100%;
+  .klee-desc-box {
+    padding: 20px;
+    font-size: 1rem;
     text-align: center;
   }
 
+  .klee-button {
+    align-self: center;
+    padding: 16px 32px;
+    font-size: 1.1rem;
+  }
   /* OTHER GAMES */
   .game-block {
     flex-direction: column;
