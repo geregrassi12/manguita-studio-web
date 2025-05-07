@@ -578,172 +578,106 @@ body {
 /* BOCA JUNIORS */
 
 @media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
+
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 12px;
+  }
+
+  /* HERO */
+  .hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* VR SECTION */
+  .vr-content {
+    flex-direction: column;
+    gap: 30px;
     padding: 0 20px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .section-inner {
+  .vr-title-box,
+  .vr-desc-box {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vr-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* KLEE SECTION */
+  .klee-content {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 30px;
+  }
+
+  .klee-title-box,
+  .klee-desc-box {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 16px;
+  }
+
+  .klee-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .klee-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* OTHER GAMES */
+  .game-block {
     flex-direction: column;
     text-align: center;
   }
-  .section-content {
-    padding-right: 0;
+
+  .game-info {
+    max-width: 100%;
+    text-align: center;
   }
-  .images-side {
-    margin-top: 30px;
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
-  .hero h1 {
-    font-size: 2.5rem;
+
+  .footer-left, .footer-right {
+    align-items: center;
   }
-  .section h1 {
-    font-size: 2rem;
-  }
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
-
-
-@media screen and (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-    }
-  
-    .header-left {
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    .nav-menu {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      margin-top: 10px;
-      gap: 10px;
-    }
-  
-    .social-icons {
-      margin-top: 15px;
-      justify-content: flex-start;
-    }
-  
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .footer-left, .footer-right {
-      max-width: 100%;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .section-inner {
-      flex-direction: column;
-      gap: 30px;
-      text-align: center;
-    }
-  
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .klee-swiper {
-      height: auto;
-      max-width: 100%;
-    }
-  
-    .game-block {
-      flex-direction: column !important;
-      text-align: center;
-    }
-  
-    .game-info {
-      text-align: center;
-      max-width: 100%;
-    }
-  
-    .sleeping-cat {
-      margin: 0 auto;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .burger {
-      display: block;
-    }
-  
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 10px;
-      gap: 15px;
-    }
-  
-    .nav-menu.show {
-      display: flex;
-    }
-  
-    .social-icons {
-      margin-top: 15px;
-      justify-content: flex-start;
-      width: 100%;
-    }
-  
-    .header-left {
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .vr-content,
-    .klee-content {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 20px;
-    }
-  
-    .vr-title-box,
-    .klee-title-box {
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
-      border-radius: 16px;
-    }
-  
-    .vr-desc-box,
-    .klee-desc-box {
-      max-width: 100%;
-      text-align: center;
-    }
-  
-    .image-grid,
-    .klee-image-grid {
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
-  
-    .vr-button,
-    .klee-button {
-      width: 100%;
-      text-align: center;
-    }
-  }
