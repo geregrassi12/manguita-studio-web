@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
 }
 
+.section-divider {
+  width: 100%;
+  height: 8px; /* o 4px, 10px, ajustable */
+  background-color: white;
+}
+
 .header {
   background-color: #0F1126;
   height: 60px;
@@ -23,6 +29,9 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo {
@@ -138,14 +147,15 @@ body {
 /* HERO */
 
 .hero {
-background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
- height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* .hero::after {
@@ -567,7 +577,12 @@ background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
 
 /* BOCA JUNIORS */
 
-
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+    padding: 0 20px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .section-inner {
@@ -694,5 +709,41 @@ background: url('../Assets/img/Backgrounds/herobg.png') center/cover no-repeat;
       width: 100%;
       display: flex;
       align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .vr-content,
+    .klee-content {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    .vr-title-box,
+    .klee-title-box {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      border-radius: 16px;
+    }
+  
+    .vr-desc-box,
+    .klee-desc-box {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .image-grid,
+    .klee-image-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .vr-button,
+    .klee-button {
+      width: 100%;
+      text-align: center;
     }
   }
