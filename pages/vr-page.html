@@ -8,11 +8,43 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
     <header class="header">
         <a href="../index.html" class="header-left">
             <img src="../Assets/img/Logos/manguitastudio_logo2.png" alt="Manguita Logo" class="logo">
             <span class="brand">Manguita Studio</span>
           </a>
+        <div class="burger" id="burger">☰</div>
+    
+        <div class="mobile-menu" id="mobile-menu">
+          <nav class="mobile-nav">
+            <a href="vr-page.html">VR</a>
+            <a href="#klee">Klee Games</a>
+            <a href="#other-games">Otros Juegos</a>
+          </nav>
+          <div class="mobile-socials">
+            <a href="https://instagram.com" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
+            <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
+          </div>
+        </div>
+      
+        
+      
+        <div class="social-icons">
+          <nav class="nav-menu">
+            <a href="vr-page.html">VR</a>
+            <a href="#klee">Klee Games</a>
+            <a href="#otros">Otros Juegos</a>
+          </nav>
+          <span>|</span>
+          <a href="https://instagram.com" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
+          <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
+          <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
+        </div>
+      </header>
+    <!-- <header class="header">
+        
       
         
       
@@ -27,7 +59,7 @@
           <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
           <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
         </div>
-      </header>
+      </header> -->
   
     <div class="vr-hero"></div>
 
@@ -69,6 +101,16 @@
           </div>
         </div>
       </footer>
+
+
+      <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        burger.addEventListener('click', () => {
+          mobileMenu.classList.toggle('show');
+        });
+      </script>
       
   </body>
   </html>

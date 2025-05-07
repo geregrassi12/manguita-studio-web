@@ -193,14 +193,27 @@ body {
 
 .hero {
   position: relative;
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+
+.hero-logo {
+  position: absolute;
+  top: 40px;
+  width: 80%;
+  max-width: 800px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* .hero::after {
