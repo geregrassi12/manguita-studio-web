@@ -676,6 +676,7 @@ body {
   }
 
   .vr-title-box {
+
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -694,6 +695,11 @@ body {
     padding: 16px 32px;
   }
 
+
+
+
+
+  
 
   
   /* KLEE SECTION */
@@ -761,3 +767,65 @@ body {
     gap: 10px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .swiper-slide img {
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .swiper-slide img {
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0 auto;
+  }
+}
+
+

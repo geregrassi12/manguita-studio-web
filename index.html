@@ -54,6 +54,7 @@
     <!-- <div class="section-divider"></div> -->
 
     <section class="vr-section">
+      
       <div class="vr-title-box">
         <h2>Experiencia VR</h2>
       </div>
@@ -66,15 +67,19 @@
         </div>
       
         <div class="vr-right">
-          <div class="image-grid">
-            <img src="Assets/img/Games/image-vr-game.png" alt="">
+          <div class="image-grid" id="vr-gallery">
+            <img src="Assets/img/Games/image-vr-game-01.png" alt="">
             <img src="Assets/img/Games/vr-playing-01.png" alt="">
             <img src="Assets/img/Games/vr-playing-02.png" alt="">
-            <img src="Assets/img/Games/image-vr-game.png" alt="">
-            <img src="Assets/img/Games/image-vr-game.png" alt="">
+            <img src="Assets/img/Games/image-vr-game-02.png" alt="">
+            <img src="Assets/img/Games/image-vr-game-03.png" alt="">
             <img src="Assets/img/Games/vr-playing-03.png" alt="">
           </div>
           <a class="vr-button" href="pages/vr-page.html">Conoce más</a>
+
+
+
+          
         </div>
       </div>
     </section>
@@ -91,7 +96,7 @@
 
         <div class="klee-content">
           <div class="klee-left">
-          <div class="klee-image-grid">
+          <div class="klee-image-grid" id="klee-gallery">
             <img src="Assets/img/Games/klee-1.png" alt="">
             <img src="Assets/img/Games/klee-2.png" alt="">
             <img src="Assets/img/Games/klee-3.png" alt="">
@@ -180,7 +185,8 @@
 
 
 
-
+      
+      
 
 
 
@@ -198,5 +204,129 @@
         mobileMenu.classList.toggle('show');
       });
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function initMobileGallery(containerId, swiperClass) {
+    const container = document.getElementById(containerId);
+    const isMobile = window.innerWidth <= 768;
+
+    // Si no es mobile, asegurate que la grilla esté visible
+    if (!isMobile) {
+      if (container) container.style.display = 'grid';
+      return;
+    }
+
+    if (!container) return;
+
+    // Ocultar grilla original solo en mobile
+    container.style.display = 'none';
+
+    // Verificá si ya existe un carrusel
+    if (document.querySelector(`.${swiperClass}`)) return;
+
+    const images = Array.from(container.querySelectorAll('img'));
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.classList.add('swiper-wrapper');
+
+    images.forEach(img => {
+      const clonedImg = img.cloneNode(true);
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      slide.appendChild(clonedImg);
+      swiperWrapper.appendChild(slide);
+    });
+
+    const swiper = document.createElement('div');
+    swiper.classList.add('swiper', swiperClass);
+    swiper.appendChild(swiperWrapper);
+    container.parentNode.insertBefore(swiper, container.nextSibling);
+
+    new Swiper(`.${swiperClass}`, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+  }
+
+  window.addEventListener('load', () => {
+    initMobileGallery('vr-gallery', 'vr-swiper');
+  });
+
+  // Opcional: manejar redimensionado
+  window.addEventListener('resize', () => {
+    initMobileGallery('vr-gallery', 'vr-swiper');
+  });
+</script>
+
+<script>
+  function initMobileGallery(containerId, swiperClass) {
+    const container = document.getElementById(containerId);
+    const isMobile = window.innerWidth <= 768;
+
+    if (!isMobile) {
+      if (container) container.style.display = 'grid';
+      return;
+    }
+
+    if (!container) return;
+
+    container.style.display = 'none';
+
+    if (document.querySelector(`.${swiperClass}`)) return;
+
+    const images = Array.from(container.querySelectorAll('img'));
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.classList.add('swiper-wrapper');
+
+    images.forEach(img => {
+      const clonedImg = img.cloneNode(true);
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      slide.appendChild(clonedImg);
+      swiperWrapper.appendChild(slide);
+    });
+
+    const swiper = document.createElement('div');
+    swiper.classList.add('swiper', swiperClass);
+    swiper.appendChild(swiperWrapper);
+    container.parentNode.insertBefore(swiper, container.nextSibling);
+
+    new Swiper(`.${swiperClass}`, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+    });
+  }
+
+  window.addEventListener('load', () => {
+    initMobileGallery('vr-gallery', 'vr-swiper');
+    initMobileGallery('klee-gallery', 'klee-swiper'); // 🆕 para Klee
+  });
+
+  window.addEventListener('resize', () => {
+    initMobileGallery('vr-gallery', 'vr-swiper');
+    initMobileGallery('klee-gallery', 'klee-swiper'); // 🆕 para Klee
+  });
+</script>
+
+
   </body>
 </html>
