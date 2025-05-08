@@ -224,7 +224,7 @@
     const container = document.getElementById(containerId);
     const isMobile = window.innerWidth <= 768;
 
-    // Si no es mobile, asegurate que la grilla esté visible
+    // Mostrar grilla en desktop
     if (!isMobile) {
       if (container) container.style.display = 'grid';
       return;
@@ -232,10 +232,10 @@
 
     if (!container) return;
 
-    // Ocultar grilla original solo en mobile
+    // Ocultar la grilla en mobile
     container.style.display = 'none';
 
-    // Verificá si ya existe un carrusel
+    // Si ya existe el swiper, no lo dupliques
     if (document.querySelector(`.${swiperClass}`)) return;
 
     const images = Array.from(container.querySelectorAll('img'));
@@ -250,82 +250,36 @@
       swiperWrapper.appendChild(slide);
     });
 
-    const swiper = document.createElement('div');
-    swiper.classList.add('swiper', swiperClass);
-    swiper.appendChild(swiperWrapper);
-    container.parentNode.insertBefore(swiper, container.nextSibling);
+    const swiperContainer = document.createElement('div');
+    swiperContainer.classList.add('swiper', swiperClass);
+    swiperContainer.appendChild(swiperWrapper);
+    container.parentNode.insertBefore(swiperContainer, container.nextSibling);
 
+    // ✅ Iniciamos el Swiper con autoplay y loop
     new Swiper(`.${swiperClass}`, {
       slidesPerView: 1,
       spaceBetween: 0,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
       pagination: {
         el: '.swiper-pagination',
         clickable: true
-      },
+      }
     });
   }
 
   window.addEventListener('load', () => {
     initMobileGallery('vr-gallery', 'vr-swiper');
-  });
-
-  // Opcional: manejar redimensionado
-  window.addEventListener('resize', () => {
-    initMobileGallery('vr-gallery', 'vr-swiper');
-  });
-</script>
-
-<script>
-  function initMobileGallery(containerId, swiperClass) {
-    const container = document.getElementById(containerId);
-    const isMobile = window.innerWidth <= 768;
-
-    if (!isMobile) {
-      if (container) container.style.display = 'grid';
-      return;
-    }
-
-    if (!container) return;
-
-    container.style.display = 'none';
-
-    if (document.querySelector(`.${swiperClass}`)) return;
-
-    const images = Array.from(container.querySelectorAll('img'));
-    const swiperWrapper = document.createElement('div');
-    swiperWrapper.classList.add('swiper-wrapper');
-
-    images.forEach(img => {
-      const clonedImg = img.cloneNode(true);
-      const slide = document.createElement('div');
-      slide.classList.add('swiper-slide');
-      slide.appendChild(clonedImg);
-      swiperWrapper.appendChild(slide);
-    });
-
-    const swiper = document.createElement('div');
-    swiper.classList.add('swiper', swiperClass);
-    swiper.appendChild(swiperWrapper);
-    container.parentNode.insertBefore(swiper, container.nextSibling);
-
-    new Swiper(`.${swiperClass}`, {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-    });
-  }
-
-  window.addEventListener('load', () => {
-    initMobileGallery('vr-gallery', 'vr-swiper');
-    initMobileGallery('klee-gallery', 'klee-swiper'); // 🆕 para Klee
+    initMobileGallery('klee-gallery', 'klee-swiper');
   });
 
   window.addEventListener('resize', () => {
     initMobileGallery('vr-gallery', 'vr-swiper');
-    initMobileGallery('klee-gallery', 'klee-swiper'); // 🆕 para Klee
+    initMobileGallery('klee-gallery', 'klee-swiper');
   });
 </script>
 
