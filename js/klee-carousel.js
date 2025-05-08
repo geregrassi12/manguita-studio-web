@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".klee-swiper", {
       loop: true,
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 0,
       autoplay: {
         delay: 3000,          // 3 segundos
         disableOnInteraction: false

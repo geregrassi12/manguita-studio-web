@@ -36,7 +36,7 @@ body {
 
 .logo {
   height: 32px;
-  margin-right: 10px;
+  margin-right  : 10px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -635,9 +635,23 @@ body {
 
 /* BOCA JUNIORS */
 
+@media screen and (max-width: 1024px) {
+  .hero-logo {
+    top: 5px;
+    max-width: 500px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
 
   /* HEADER */
+
+  .hero-logo {
+    top: 1px;
+    max-width: 230px;
+  }
+
   .nav-menu {
     display: none !important;
   }
@@ -775,57 +789,37 @@ body {
 
 
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
   .swiper {
     width: 100%;
     padding: 10px 0;
-  }
-
-  .swiper-slide {
     display: flex;
     justify-content: center;
-    
-  }
-
-  .swiper-slide img {
-    width: 80%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 12px;
-    background-color: white;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .swiper {
-    display: flex;
-    justify-content: center;
+    align-items: center;
   }
 
   .swiper-wrapper {
     display: flex;
+    
   }
 
   .swiper-slide {
     display: flex;
     justify-content: center;
-    
+    align-items: center;
   }
 
   .swiper-slide img {
-    width: 80%;
-    max-width: 280px;
-    height: auto;
+    width: 100%;
+    max-width: 320px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 12px;
     background-color: white;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-
 
