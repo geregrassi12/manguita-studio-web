@@ -9,6 +9,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .section-divider {
   width: 100%;
   height: 8px; /* o 4px, 10px, ajustable */
@@ -131,10 +133,23 @@ body {
 .social-icons img {
   width: 22px;
   height: 22px;
-  filter: brightness(0) invert(1);
   transition: transform 0.2s;
   display: block;
 }
+
+.lenguages{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.lang-button {
+  background-color: transparent;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
 /* Hamburguesa */
 .burger {
     display: none;

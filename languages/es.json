@@ -1,0 +1,41 @@
+{
+    "header": {
+        "other-games": "Otros Juegos"
+    },
+    "vr-section": {
+        "tittle": "Experiencia VR",
+        "description": "Descubrí mundos sci-fi en una aventura VR inmersiva. Imágenes futuristas, mecánicas nuevas y diversión sin límites.",
+        "button": "Conoce más"
+    },
+    "klee-section": {
+        "description": "Descubrí nuestra innovadora línea de aplicaciones móviles de estimulación temprana, especialmente diseñadas para niños y niñas de 3 a 5 años. Cada app ofrece experiencias educativas, lúdicas y seguras que potencian el desarrollo cognitivo, emocional y motriz de los más pequeños, a través del juego y la exploración.",
+        "button": "Conoce más"
+    },
+    "othergames-section": {
+        "tittle": "Otros juegos",
+        "description-01": "¡Sé rápido! Mantén al castor por delante del sendero que se hunde.",
+        "button": "Visitar",
+        "coming-soon": "Proximamente...",
+        "description-02": "El próximo juego de estrategia en miniatura. Controlá tu tanque y dominá el campo de batalla",
+        "development": "En desarrollo"
+    },
+    "footer-section": {
+        "about-us": "Sobre nosotros",
+        "privacy-policy": "Politica de privacidad"
+    },
+
+
+    "vr-page": {
+        "tittle": "Realidad Virtual como nunca antes la viviste",
+
+        "subtittle-1": "¿Qué ofrecemos?",
+        "desc-1": "En Manguita Studio desarrollamos experiencias VR inmersivas, estilizadas y adaptadas a las necesidades de cada cliente. Nuestra especialidad es transformar ideas en realidades virtuales potentes que conectan con la audiencia.",
+
+        "subtittle-2": "¿Cómo trabajamos?",
+        "desc-2": "Nuestro enfoque es 100% personalizado. Podemos integrarnos a tu equipo de desarrollo como estudio externo o asumir el proyecto completo desde cero. Nos encargamos del arte, programación, optimización y compatibilidad técnica para distintas plataformas VR.",
+
+        "subtittle-3": "🧠 Juega, Piensa, Escapa",
+        "desc-3": "La lógica y la creatividad son tu mejor arma. Atrévete a resolver desafíos virtuales con amigos, familia o compañeros de trabajo. ¿Podrás lograrlo antes de que se acabe el tiempo?"
+    }
+
+}

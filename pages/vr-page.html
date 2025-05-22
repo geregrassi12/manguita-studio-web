@@ -20,10 +20,15 @@
           <nav class="mobile-nav">
             <a href="../index.html">Home</a>
             <a href="vr-page.html">VR</a>
+            <div class="languages">
+        <button class="lang-button" data-language="es">❤️</button>
+        <button class="lang-button" data-language="en">💙</button>
+        <button class="lang-button" data-language="ca">🧡</button>
+      </div>
           </nav>
           <div class="mobile-socials">
             <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
-            <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
+            <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
             <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
           </div>
         </div>
@@ -34,10 +39,15 @@
           <nav class="nav-menu">
             <a href="../index.html">Home</a>
             <a href="vr-page.html">VR</a>
+            <div class="languages">
+        <button class="lang-button" data-language="es">❤️</button>
+        <button class="lang-button" data-language="en">💙</button>
+        <button class="lang-button" data-language="ca">🧡</button>
+      </div>
           </nav>
           <span>|</span>
-          <a href="https://instagram.com" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
-          <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
+          <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
           <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
         </div>
       </header>
@@ -62,18 +72,18 @@
     <div class="vr-hero"></div>
 
   <main class="vr-page">
-    <h1>Realidad Virtual como nunca antes la viviste</h1>
+    <h1 data-section="vr-page" data-value="tittle">Realidad Virtual como nunca antes la viviste</h1>
 
-    <h2>¿Qué ofrecemos?</h2>
-    <p>En Manguita Studio desarrollamos experiencias VR inmersivas, estilizadas y adaptadas a las necesidades de cada cliente. Nuestra especialidad es transformar ideas en realidades virtuales potentes que conectan con la audiencia.</p>
+    <h2 data-section="vr-page" data-value="subtittle-1">¿Qué ofrecemos?</h2>
+    <p data-section="vr-page" data-value="desc-1">En Manguita Studio desarrollamos experiencias VR inmersivas, estilizadas y adaptadas a las necesidades de cada cliente. Nuestra especialidad es transformar ideas en realidades virtuales potentes que conectan con la audiencia.</p>
 
-    <h2>¿Cómo trabajamos?</h2>
-    <p>Nuestro enfoque es 100% personalizado. Podemos integrarnos a tu equipo de desarrollo como estudio externo o asumir el proyecto completo desde cero. Nos encargamos del arte, programación, optimización y compatibilidad técnica para distintas plataformas VR.</p>
+    <h2 data-section="vr-page" data-value="subtittle-2">¿Cómo trabajamos?</h2>
+    <p data-section="vr-page" data-value="desc-2">Nuestro enfoque es 100% personalizado. Podemos integrarnos a tu equipo de desarrollo como estudio externo o asumir el proyecto completo desde cero. Nos encargamos del arte, programación, optimización y compatibilidad técnica para distintas plataformas VR.</p>
 
-    <h2>🧠 Juega, Piensa, Escapa</h2>
-    <p>La lógica y la creatividad son tu mejor arma. Atrévete a resolver desafíos virtuales con amigos, familia o compañeros de trabajo. ¿Podrás lograrlo antes de que se acabe el tiempo?</p>
+    <h2 data-section="vr-page" data-value="subtittle-3">🧠 Juega, Piensa, Escapa</h2>
+    <p data-section="vr-page" data-value="desc-3">La lógica y la creatividad son tu mejor arma. Atrévete a resolver desafíos virtuales con amigos, familia o compañeros de trabajo. ¿Podrás lograrlo antes de que se acabe el tiempo?</p>
   </main>
-
+ 
   <section class="vr-gallery-fake-carousel">
     <img src="../Assets/img/Games/image-vr-game-01.png" alt="VR Juego 1">
     <img src="../Assets/img/Games/image-vr-game-02.png" alt="VR Juego 2">
@@ -88,13 +98,13 @@
             <img src="../Assets/img/Logos/manguitastudio_logo2.png" alt="Manguita Studio Logo" class="footer-logo">
             <p class="copyright">© 2025 Manguita Studio</p>
             <ul class="footer-links">
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="../pages/privacy.html">Política de Privacidad</a></li>
+              <li><a href="#" data-section="footer-section" data-value="about-us">Sobre Nosotros</a></li>
+              <li><a href="../pages/privacy.html" data-section="footer-section" data-value="privacy-policy">Política de Privacidad</a></li>
             </ul>
           </div>
           <div class="footer-right">
             <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="../Assets/icons/instagram.png" alt="Instagram"></a>
-            <a href="https://tiktok.com" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
+            <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="../Assets/icons/tik-tok.png" alt="TikTok"></a>
             <a href="https://facebook.com" target="_blank"><img src="../Assets/icons/facebook.png" alt="Facebook"></a>
           </div>
         </div>
@@ -109,6 +119,7 @@
           mobileMenu.classList.toggle('show');
         });
       </script>
-      
+      <script src="../js/language.js"></script>
+
   </body>
   </html>

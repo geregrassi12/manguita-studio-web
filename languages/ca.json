@@ -1,0 +1,39 @@
+{
+    "header": {
+        "other-games": "Altres jocs"
+    },
+    "vr-section": {
+        "tittle": "Experimenta la VR",
+        "description": "Descobreix mons de ciència-ficció en una aventura immersiva de realitat virtual. Imatges futuristes, mecàniques noves i diversió sense límits.",
+        "button": "Més informació"
+    },
+    "klee-section": {
+        "description": "Descobreix la nostra innovadora línia d’aplicacions mòbils d’estimulació primerenca, especialment dissenyades per a nens i nenes de 3 a 5 anys. Cada app ofereix experiències educatives, lúdiques i segures que potencien el desenvolupament cognitiu, emocional i motriu dels més petits mitjançant el joc i l’exploració.",
+        "button": "Més informació"
+    },
+    "othergames-section": {
+        "tittle": "Altres jocs",
+        "description-01": "Sigues ràpid! Mantingues el castor per davant del camí que s’enfonsa.",
+        "button": "Visitar",
+        "coming-soon": "Pròximament...",
+        "description-02": "El proper joc de miniatures d’estratègia. Controla el teu tanc i domina el camp de batalla.",
+        "development": "En desenvolupament"
+    },
+    "footer-section": {
+        "about-us": "Sobre nosaltres",
+        "privacy-policy": "Política de privacitat"
+    },
+
+    "vr-page": {
+    "tittle": "Realitat Virtual com mai abans l'has viscuda",
+
+    "subtittle-1": "Què oferim?",
+    "desc-1": "A Manguita Studio desenvolupem experiències de realitat virtual immersives, estilitzades i adaptades a les necessitats de cada client. Som especialistes a transformar idees en realitats virtuals potents que connecten amb l'audiència.",
+
+    "subtittle-2": "Com treballem?",
+    "desc-2": "El nostre enfocament és 100% personalitzat. Podem integrar-nos al teu equip de desenvolupament com a estudi extern o assumir el projecte complet des de zero. Ens encarreguem de l’art, la programació, l’optimització i la compatibilitat tècnica per a diferents plataformes de realitat virtual.",
+
+    "subtittle-3": "🧠 Juga, Pensa, Escapa",
+    "desc-3": "La lògica i la creativitat són la teva millor arma. Atraveix-te a resoldre desafiaments virtuals amb amics, família o companys de feina. Seràs capaç d’aconseguir-ho abans que s’acabi el temps?"
+}
+}

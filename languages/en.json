@@ -1,0 +1,39 @@
+{
+    "header": {
+        "other-games": "Other Games"
+    },
+    "vr-section": {
+        "tittle": "Experience VR",
+        "description": "Discover sci-fi worlds in an immersive VR adventure. Futuristic visuals, new mechanics, and endless fun.",
+        "button": "Learn more"
+    },
+    "klee-section": {
+        "description": "Discover our innovative line of early stimulation mobile apps, specially designed for children aged 3 to 5. Each app offers educational, playful, and safe experiences that enhance cognitive, emotional, and motor development through play and exploration.",
+        "button": "Learn more"
+    },
+    "othergames-section": {
+        "tittle": "Other games",
+        "description-01": "Be quick! Keep the beaver ahead of the sinking path.",
+        "button": "Visit",
+        "coming-soon": "Coming soon...",
+        "description-02": "The next miniature strategy game. Control your tank and dominate the battlefield.",
+        "development": "In development"
+    },
+    "footer-section": {
+        "about-us": "About us",
+        "privacy-policy": "Privacy Policy"
+    },
+
+    "vr-page": {
+    "tittle": "Virtual Reality like you've never experienced before",
+
+    "subtittle-1": "What do we offer?",
+    "desc-1": "At Manguita Studio we develop immersive, stylized VR experiences tailored to each client's needs. Our specialty is transforming ideas into powerful virtual realities that resonate with audiences.",
+
+    "subtittle-2": "How do we work?",
+    "desc-2": "Our approach is 100% personalized. We can integrate into your development team as an external studio or take on the entire project from scratch. We handle art, programming, optimization, and technical compatibility for various VR platforms.",
+
+    "subtittle-3": "🧠 Play, Think, Escape",
+    "desc-3": "Logic and creativity are your best weapons. Dare to solve virtual challenges with friends, family, or coworkers. Will you succeed before time runs out?"
+}
+}

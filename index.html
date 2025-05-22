@@ -22,11 +22,16 @@
       <nav class="mobile-nav">
         <a href="pages/vr-page.html">VR</a>
         <a href="#klee">Klee Games</a>
-        <a href="#other-games">Otros Juegos</a>
+        <a href="#other-games" data-section="header" data-value="other-games">Otros Juegos</a>
+        <div class="languages">
+        <button class="lang-button" data-language="es"><img src="./Assets/icons/flag-spain.png" alt="Spain flag" width="25px" height="auto"></button>
+        <button class="lang-button" data-language="en"><img src="./Assets/icons/flag-united-states.png" alt="Us flag" width="25px" height="auto"></button>
+        <button class="lang-button" data-language="ca"><img src="./Assets/icons/flag-catalunya.png" alt="Catalunya flag" width="25px" height="auto"></button>
+      </div>
       </nav>
       <div class="mobile-socials">
         <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="Assets/icons/instagram.png" alt="Instagram"></a>
-        <a href="https://tiktok.com" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
+        <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
         <a href="https://facebook.com" target="_blank"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
       </div>
     </div>
@@ -35,11 +40,16 @@
       <nav class="nav-menu">
         <a href="pages/vr-page.html">VR</a>
         <a href="#klee">Klee Games</a>
-        <a href="#otros">Otros Juegos</a>
+        <a href="#other-games" data-section="header" data-value="other-games">Otros Juegos</a>
       </nav>
+      <div class="languages">
+        <button class="lang-button" data-language="es"><img src="./Assets/icons/flag-spain.png" alt="Spain flag" width="25px" height="auto"></button>
+        <button class="lang-button" data-language="en"><img src="./Assets/icons/flag-united-states.png" alt="Us flag" width="25px" height="auto"></button>
+        <button class="lang-button" data-language="ca"><img src="./Assets/icons/flag-catalunya.png" alt="Catalunya flag" width="25px" height="auto"></button>
+      </div>
       <span>|</span>
-      <a href="https://instagram.com" target="_blank"><img src="Assets/icons/instagram.png" alt="Instagram"></a>
-      <a href="https://tiktok.com" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
+      <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="Assets/icons/instagram.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
       <a href="https://facebook.com" target="_blank"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
     </div>
   </header>
@@ -51,13 +61,13 @@
 
   <section class="vr-section">
     <div class="vr-title-box">
-      <h2>Experiencia VR</h2>
+      <h2 data-section="vr-section" data-value="tittle">Experiencia VR</h2>
     </div>
 
     <div class="vr-content">
       <div class="vr-left">
         <div class="vr-desc-box">
-          <p>Descubrí mundos sci-fi en una aventura VR inmersiva. Imágenes futuristas, mecánicas nuevas y diversión sin límites.</p>
+          <p data-section="vr-section" data-value="description">Descubrí mundos sci-fi en una aventura VR inmersiva. Imágenes futuristas, mecánicas nuevas y diversión sin límites.</p>
         </div>
       </div>
       <div class="vr-right">
@@ -69,7 +79,7 @@
           <img src="Assets/img/Games/image-vr-game-03.png" alt="">
           <img src="Assets/img/Games/vr-playing-03.png" alt="">
         </div>
-        <a class="vr-button" href="pages/vr-page.html">Conoce más</a>
+        <a class="vr-button" href="pages/vr-page.html" data-section="vr-section" data-value="button">Conoce más</a>
       </div>
     </div>
   </section>
@@ -91,39 +101,39 @@
       </div>
       <div class="klee-right">
         <div class="klee-desc-box">
-          <p>
+          <p data-section="klee-section" data-value="description">
             Descubrí nuestra innovadora línea de aplicaciones móviles de estimulación temprana, especialmente diseñadas para niños y niñas de 3 a 5 años. Cada app ofrece experiencias educativas, lúdicas y seguras que potencian el desarrollo cognitivo, emocional y motriz de los más pequeños, a través del juego y la exploración.
           </p>
         </div>
-        <a class="klee-button" target="_blank" href="https://kleegames.com">Conoce más</a>
+        <a class="klee-button" target="_blank" href="https://kleegames.com" data-section="klee-section" data-value="button">Conoce más</a>
       </div>
     </div>
   </section>
 
   <section id="other-games" class="other-games">
     <div class="section-header">
-      <h2>Other Games</h2>
+      <h2 data-section="othergames-section" data-value="tittle">Other Games</h2>
     </div>
 
     <div class="game-block published">
       <img src="Assets/img/Games/juego-publicado.png" alt="Published Game Logo" class="game-logo">
       <div class="game-info">
         <h3>RUN BEAVER RUN - zig zag game</h3>
-        <p>Stay quick on your feet! Keep the beaver ahead of the sinking path</p>
-        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.manguitastudio.runbeaverrun" class="btn-play">Visitar</a>
+        <p data-section="othergames-section" data-value="description-01">Stay quick on your feet! Keep the beaver ahead of the sinking path</p>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.manguitastudio.runbeaverrun" class="btn-play" data-section="othergames-section" data-value="button">Visitar</a>
       </div>
     </div>
 
     <div class="coming-soon-block">
       <img src="Assets/img/Misc/gato-durmiendo.png" alt="Sleeping Cat Mascot" class="sleeping-cat">
-      <p class="coming-text">Coming soon...</p>
+      <p class="coming-text" data-section="othergames-section" data-value="coming-soon">Coming soon...</p>
     </div>
 
     <div class="game-block in-dev">
       <div class="game-info">
         <h3>Mini Tank Blitz</h3>
-        <p>El próximo juego de estrategia en miniatura. Controlá tu tanque y dominá el campo de batalla.</p>
-        <span class="dev-label">En desarrollo</span>
+        <p data-section="othergames-section" data-value="description-02">El próximo juego de estrategia en miniatura. Controlá tu tanque y dominá el campo de batalla.</p>
+        <span class="dev-label" data-section="othergames-section" data-value="development">En desarrollo</span>
       </div>
       <img src="Assets/img/Games/tanque-preview.png" alt="Game in Development Logo" class="game-logo">
     </div>
@@ -135,13 +145,13 @@
         <img src="Assets/img/Logos/manguitastudio_logo2.png" alt="Manguita Studio Logo" class="footer-logo">
         <p class="copyright">© 2025 Manguita Studio</p>
         <ul class="footer-links">
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="/pages/privacy.html">Política de Privacidad</a></li>
+          <li><a href="#" data-section="footer-section" data-value="about-us">Sobre Nosotros</a></li>
+          <li><a href="/pages/privacy.html" data-section="footer-section" data-value="privacy-policy">Política de Privacidad</a></li>
         </ul>
       </div>
       <div class="footer-right">
         <a href="https://www.instagram.com/manguitastudio/" target="_blank"><img src="Assets/icons/instagram.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@manguitastudio?lang=es-419" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
+        <a href="https://www.tiktok.com/@manguitastudio" target="_blank"><img src="Assets/icons/tik-tok.png" alt="TikTok"></a>
         <a href="https://facebook.com" target="_blank"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
       </div>
     </div>
@@ -213,5 +223,7 @@
       initMobileGallery('klee-gallery', 'klee-swiper');
     });
   </script>
+<script src="./js/language.js"></script>
+<script src="./js/scroll-index.js"></script>
 </body>
 </html>
